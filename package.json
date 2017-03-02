@@ -1,0 +1,30 @@
+{
+  "name": "gulp-tutorial",
+  "version": "1.0.0",
+  "description": "first go at gulp build process",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blackspace"
+  ],
+  "author": "luke demarest",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-data": "^1.2.1",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^1.2.2"
+  }
+}

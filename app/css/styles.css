@@ -1,0 +1,129 @@
+a {
+  text-decoration: none;
+  color: #00ae88; }
+  a strong {
+    color: inherit; }
+
+p, ul {
+  color: #caffff;
+  font-size: 1.25em; }
+
+ul {
+  padding-left: 0; }
+
+li {
+  list-style: none;
+  padding-bottom: 3em; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+pre {
+  overflow: auto;
+  white-space: pre-wrap;
+  padding: 1em;
+  border-left: 2px solid #69c; }
+
+sup {
+  color: #c52a31; }
+
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+  text-align: center;
+  background-color: #00ae88;
+  color: #202221; }
+  footer a {
+    color: inherit; }
+  footer h2 {
+    color: #202221; }
+
+html {
+  background-color: rbg(32, 34, 33); }
+  html nav, html main {
+    margin: 0 auto;
+    max-width: 43em;
+    background-color: rbg(32, 34, 33); }
+  html nav {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    max-width: none;
+    text-align: center;
+    padding: 2vw 2em; }
+    html nav a {
+      border-radius: 290486px;
+      font-size: 0.75em;
+      letter-spacing: 0.2em;
+      padding: 1em 2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: none 200ms ease-out;
+      transition-property: color, background; }
+    html nav a.active, html nav a:hover {
+      color: #c52a31; }
+  html .header-logo {
+    width: 200px;
+    margin: -300px 0 0 -100px !important;
+    padding-left: 50%;
+    display: none;
+    position: absolute;
+    opacity: 0.25; }
+  html .masthead-wrapper {
+    height: 350px; }
+  html main {
+    padding: 4em 1em; }
+  html body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    background: #202221;
+    color: rgba(80, 80, 80, 0.75);
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    -moz-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    font-size: 0.825em;
+    border-top: 12px solid #00ae88; }
+  html h2 {
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+    padding-top: 1em;
+    color: #00ae88;
+    font-size: 25px; }
+  html h1, html h2, html strong {
+    font-weight: 500; }
+  html code, html pre {
+    background: #f5f7f9;
+    border-bottom: 1px solid #d8dee9;
+    color: #a7adba;
+    -moz-font-smoothing: grayscale;
+    -webkit-font-smoothing: initial; }
+
+#events-upcoming .location, #events-upcoming .date, #events-upcoming .description {
+  display: block;
+  color: gray;
+  opacity: 0.45; }
+
+#events-upcoming .summary {
+  color: #00ae88; }
+
+#events-upcoming .description {
+  display: none; }
+
+#events-upcoming .more {
+  text-align: right;
+  float: right;
+  color: #c52a31; }
+
+#events-upcoming .wokeshop {
+  padding: 2px 10px 2px 0; }
+
+@media (max-width: 700px) {
+  html nav a {
+    display: block;
+    padding: 2em; } }

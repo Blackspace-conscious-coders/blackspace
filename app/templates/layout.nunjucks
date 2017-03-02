@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+  		<title>Blackspace</title>
+  		<meta http-equiv="x-ua-compatible" content="ie=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<link rel="Shortcut Icon" href="">
+  
+ 		<meta name="robots" content="index,follow,noodp">
+  		<meta name="googlebot" content="index,follow">
+  		<meta name="google" content="nositelinkssearchbox">
+  
+ 		<meta name="description" content="Blackspace is an Afrofuturism digital makerspace in Durham, North Carolina.">
+  		<meta name="abstract" content="Blackspace is an Afrofuturism digital makerspace in Durham, North Carolina.">
+  		<meta name="summary" content="Blackspace is an Afrofuturism digital makerspace in Durham, North Carolina.">
+  		<meta name="subject" content="Blackspace">
+  		<meta name="topic" content="Blackspace">
+
+  		<meta name="coverage" content="Worldwide">
+  		<meta name="referrer" content="never">
+  		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<header>
+			{% import 'macros/navigation.nunjucks' as nav %}
+        		{{nav.active('home')}}
+		</header>
+		<div id="masthead-wrapper"></div>
+		<img class="header-logo" src="images/afronaut.png">
+		<main>
+
+			{% block content %} 
+
+			{% endblock %}		
+
+		</main>
+		{% include 'partials/footer.nunjucks' %}
+		<script src="js/p5.js"></script>
+		<script src="js/masthead-afronaut.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
