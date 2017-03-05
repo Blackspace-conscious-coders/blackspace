@@ -35,26 +35,19 @@ pre {
 sup {
 	color: #c52a31;
 }
-
-footer {
-	align-items: center;
-	display: flex;
-	justify-content:center;
-	margin-top: 4em;
-	text-align: center;
+.big-button{
+	text-decoration: none;
 	background-color: #00ae88;
-	color: #202221;
-	a {
-		color:inherit;
-
-	}
-	h2{
-		color: #202221;
-	}
+	padding: 1.5em 4em;
+	color: #505050;
+	font-size: 18px;
+	text-align: center;
+	display: block;
 }
 
+
 html {
-	background-color: rbg(32,34,33);
+	background-color: #1C1E1F;
 	nav, main {
 		margin: 0 auto;
 		max-width: 43em;
@@ -83,12 +76,12 @@ html {
 		}
 	}
 	.header-logo{
-		width: 200px;
-		margin: -300px 0 0 -100px !important;
+		width: 550px;
+		margin: -223px 0 0 -275px !important;
 		padding-left: 50%;
 		display: none;
 		position: absolute;
-		opacity: 0.25;
+		/*opacity: 0.25;*/
 	}
 	.masthead-wrapper {
 		height: 350px;
@@ -99,7 +92,7 @@ html {
 	body {
 		font-family: "Helvetica", "Arial", sans-serif;
   		line-height: 1.5;
-  		background: rgb(32,34,33);
+  		background: #1C1E1F;
   		color: rgba(80,80,80,0.75);
   		font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   		-moz-font-smoothing: grayscale;
@@ -116,6 +109,9 @@ html {
 		color: #00ae88;
 		font-size: 25px;
 	}
+	h1{
+		color: #c52a31;
+	}
 	h1,h2,strong {
 		font-weight: 500;
 	}
@@ -125,6 +121,44 @@ html {
 		color: #a7adba;
   		-moz-font-smoothing: grayscale;
   		-webkit-font-smoothing: initial;
+	}
+	footer {
+		align-items: center;
+		display: flex;
+		justify-content:center;
+		margin-top: 4em;
+		text-align: center;
+		background-color: #00ae88;
+		color: #202221;
+		background-image: url('/images/space-is-the-place-bw.jpg');
+		background-blend-mode: multiply;
+		background-repeat: no-repeat;
+		background-position: center 0;
+		a {
+			color:inherit;
+
+		}
+		h2{
+			color: #000;
+		}
+		.big-button{
+			color: #00ae88;
+			background-color: #1C1E1F;
+		}
+		form{
+		opacity: 0.8;
+		background-color: #505050;
+		width: 300px;
+		margin: 7em 0;
+		}
+		form:hover{
+			cursor: pointer;
+			background-color: #c52a31;
+			opacity: 0.9;
+			transition: none 300ms ease-out;
+			transition: none 300ms ease-in;
+  			transition-property: color, background, opacity;
+		}
 	}
 }
 #events-upcoming{
@@ -155,5 +189,9 @@ html {
 	html nav a {
 		display: block;
 		padding: 2em;
+	}
+	html .header-logo{
+		width: 250px;
+		margin: -205px 0 0 -125px !important;
 	}
 }

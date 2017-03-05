@@ -6,14 +6,14 @@ var black = true;
 
 
 function setup() {
-  	canvas = createCanvas(windowWidth - 10, 350);
+  	canvas = createCanvas(windowWidth, 350);
   	canvas.parent('masthead-wrapper');
     	background(0,0,0);
-    	frameRate(80);
+    	frameRate(70);
 
  	var p = 10;
  	for (var i = 0; i < p; i++) {
-    		boids[i] = new Boid(random(width/2 - 35, width/2 + 35), random(height/2 - 45, height/2 + 45));
+    		boids[i] = new Boid(random(width/2 - 25, width/2 + 25), random(height/2 - 25, height/2 + 25));
   	}
 }
 
@@ -34,8 +34,7 @@ function draw() {
 
 
 function windowResized() {
-  	var heightP = 350;
-  	resizeCanvas(windowWidth - 10, heightP);
+  	resizeCanvas(windowWidth, 350);
 }
 
 
@@ -197,7 +196,7 @@ Boid.prototype.separate = function(boids) {
 // Alignment
 // For every nearby boid in the system, calculate the average velocity
 Boid.prototype.align = function(boids) {
-  	var neighbordist = 35;
+  	var neighbordist = 5;
   	var sum = createVector(0, 0);
   	var count = 0;
   	for (var i = 0; i < boids.length; i++) {

@@ -23,12 +23,11 @@
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-		<header>
-			{% import 'macros/navigation.nunjucks' as nav %}
-        		{{nav.active('home')}}
-		</header>
-		<div id="masthead-wrapper"></div>
-		<img class="header-logo" src="images/afronaut.png">
+		{% block heading %} 
+
+		{% endblock %}	
+		<div style="height:350px; background-color:black;"id="masthead-wrapper"></div>
+		<img class="header-logo" src="images/blackspace.png">
 		<main>
 
 			{% block content %} 
