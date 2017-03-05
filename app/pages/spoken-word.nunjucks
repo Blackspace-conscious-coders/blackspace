@@ -1,0 +1,38 @@
+{% extends "layout.nunjucks" %}
+
+{% block heading %}
+		<header>
+			{% import 'macros/navigation.nunjucks' as nav %}
+			{{nav.active('spoken-word')}}
+		</header>
+{% endblock %}
+
+{% block content %}	
+	<section>
+		<iframe width="100%" height="320" src="https://www.youtube.com/embed/C7LbZRC76Sk?rel=0&amp;controls=0&amp;showinfo=0?ecver=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+		<h1>SPOKEN WORD</h1>
+		<h2>Writing and Performance Workshops + Cypher | Every Thursday 6PM-8:30PM at Blackspace Durham until April 13th 2017</h2>
+		<p>
+		Blackspace hosts weekly writing and performance workshops for teens of African descent every Thursday from 6:30PM - 8PM at our Durham studio. Youth aged 13-19 work on developing their writing skills, and performance techniques to take their work from the page to the stage! Poetry workshops are facilitated by program director/poet Mariah Monsanto as well as Destiny Hemphill and Yoni Jefferies. At the same time as the poetry workshops, youth interested in Hip Hop have the option to join a freestyle and theatre performance workshop, facilitated by emcee/founder of the UNC Cypher, J Rowdy.
+		</p>
+		<img src="images/spoken-word.jpg">
+
+		<h2>Monthly Poetry Slams | Every 3rd Tuesday @ Beyu Caffe until April 18th 2017</h2>
+		<p>
+		Each month, on 3rd Tuesdays, workshops culminate in a monthly poetry slam at Beyu Caffe. Slams are free and open to the public. The mic is open to all youth between the ages of 13 and 19. Poetry slam winners are eligible to join Blackspace and Durham’s first Brave New Voices Team.
+		</p>
+
+		<h2>Brave New Voices | July 19-22 2017 in the Bay Area</h2>
+		<p>
+		Now in its 20th year, Brave New Voices is an annual international youth poetry slam and festival, which convenes the most outstanding and outspoken youth poets from around the world for 5 days of workshops, slams, showcases, community service and civic participation events. Blackspace will represent Durham’s first youth poetry slam team at BNV 2017.
+		<br>
+		For more information email Mariah Monsanto: blackspacepoetry@gmail.com
+		</p>
+		<img src="images/spoken-word-2.jpg">
+
+	<section>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	
+
+{% endblock %}

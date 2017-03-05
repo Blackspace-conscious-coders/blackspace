@@ -1,0 +1,194 @@
+{% extends "layout.nunjucks" %}
+
+{% block heading %}
+		<header>
+			{% import 'macros/navigation.nunjucks' as nav %}
+			{{nav.active('conscious-code')}}
+		</header>
+{% endblock %}
+
+{% block content %}
+	<section>
+		<img src="images/blackspaced_editor.png">
+		<h1>CONSCIOUS CODE</h1>
+		<p> Conscious coding wokeshops are free of charge and use free and open-source software.</p>
+		<h2>3D-Printing Workshop Proposal</h2>
+		<p>
+		Blackspace is developing a 3D-printing conscious code workshop for high school students exploring identity and African American history + culture in the United States.
+		This proposed workshop consists of multiple parts, both cultural and technical. We want these experiences to remain free of charge for all students. The following proposal outlines workshop objectives.
+		</p>
+	<section>
+	<section>
+      <h2>Workshop Supporting Partners</h2>
+      <p>
+        <a class="highlighted" href="">Blackspace</a><br>
+        <a class="highlighted" href="">HacDC: The Capital's Hackerspace</a><br>
+        <a class="highlighted" href="">Homeschoolers of Color</a>
+        <br>
+        <br>
+        <a class="highlighted" style="color: #f8e558 !important" href="#support">Interested in becoming a partner?</a>
+      </p>
+    </section>
+    <section>
+      <h2>Workshop Implementing Team</h2>
+      <p>
+        <a class="highlighted" href="">Luke Demarest</a> is a visual artist and computer programmer.
+        He has an active artist practice and is Blackspace's 3D-printing program manager.
+        He has worked as a web engineer for Rosetta Stone,
+        as an artist-in-residence at the American Underground - a Google for Entrepreneurs Tech Hub - and
+        as principal studio assistant for the Mountain Lake Workshop - a
+        collaborative workshop nurtured by the belief that genuine art
+        and culture can develop from any situation in which there are
+        shared experiences.
+        Luke is a member of the HacDC 3D-printing group and is an active supporter of free culture and free software.
+      </p>
+      <p>
+        <a class="highlighted" href="">Pierce Freelon</a> is a musician, professor and social entrepreneur.
+        He is the creator of Blackspace - a digital makerspace based in Durham, North Carolina - and
+        the co-founder of the Emmy-award winning PBS web-series Beat Making Lab.
+        He has taught in the Department of African, African American and Diaspora Studies at UNC Chapel Hill
+        and is the front-man of the jazz/hip hop quartet The Beast.
+      </p>
+      <p>
+        <a class="highlighted" href="">Julia Longtin</a>
+        is a hardware and software hacker with 4.5 years of experience as a hackerspace treasurer and 1
+        year as president of HacDC: the Capital Hackerspace. Julia has 5000+ hours teaching hacking skills to the general
+        public and is a Free Software/Hardware Zealot.
+      </p>
+      <p>
+        I'm a 'born hacker' who's worked my way up from a farm in Arkansas to
+        President of a HackerSpace in DC. I've written nothing but Free
+        Software for 15 years, relying on it for my infrastructure for the
+        last 20. I'm maintainer of many tricky software projects, like a
+        haskell-based 3D modeling system, an image recognition system, and
+        many Linux Kernel patch sets. I invented using microwaves in the
+        aluminium casting process. I teach a strong set of skills surrounding
+        3D-printing, laser cutting, and all things CNC.
+
+        I drink deeply of technology, spending most of my time writing code or
+        building things. I lament the fact that most don't get the chance to
+        develop similar skills, so am driven to teach the subjects in the best
+        ways I can find. I currently keep a load of 10+ hours a week teaching
+        the public about 3D-Printing and Microcontrollers.
+
+        As a board member, I have brought two spaces from the red into the
+        black, by building communities and strengthening the people in them...
+        and a lot of hard work!
+      </p>
+    </section>
+    <section>
+      <h2>Workshop + Exhibition Locations</h2>
+      <p>
+        <a class="highlighted" href="">Blackspace</a><br>
+        212 W Main St<br>
+        Durham, NC 27701<br>
+        United State of America
+      </p>
+      <p>
+        <a class="highlighted" href="">HacDC</a><br>
+        1525 Newton St NW<br>
+        Washington, DC 20010<br>
+        United States of America
+      </p>
+      <p>
+        <a class="highlighted" href="">The Carrack Modern Art</a><br>
+        947 E Main St<br>
+        Durham, NC 27701<br>
+        United States of America
+      </p>
+      <p>
+        <a class="highlighted" href="">National Museum of African American History & Culture</a><br>
+        1400 Constitution Ave NW<br>
+        Washington, DC 20560<br>
+        United States of America
+      </p>
+
+    </section>
+    <section>
+      <h2>Workshop Aims and Objectives</h2>
+      <p>
+        We aim to develop a dialog about what it means to be a human and a citizen in the changing landscape of our city, state, and country.
+        The result will be young people, also known as afronauts, that have a deeper understanding of their individuality, their commonality and their environment.
+        The workshop will culminate in an exhibition of 3D printed sculptures by students.
+        This will ultimately shape a cultural and technical 3d-printing curriculum and modular 3d-printing studio setup that can be replicated for other groups and locations in the future.
+      </p>
+    </section>
+    <section>
+      <h2>Workshop Methods Overview</h2>
+      <p>
+        From a technical standpoint, this workshop will be an accessible introduction to 3D-printing and computer programming,
+        serving as a gateway to computer literacy.
+        We've created a custom blackspace interface for openjscad.org, an open-source modeling framework which take's a programmers approach to developing 3D models in JavaScript.
+        This teaches the syntax of JavaScript, the programming language of the web, introducing key programming and internet concepts that students can build upon, not just in the 3D-printing context. 
+        The Blackspace webapp is pictured below.
+      </p>
+		<img src="images/blackspaced_editor.png" style="border:1px solid white;">
+      <p>
+        For the pilot workshop we plan to work with <strong>~10 high school students</strong> from Homeschoolers of Color starting in <strong>Feburary 2017</strong> and ending in <strong>June 2017</strong>.
+        <br>Listed below are the projected workshop components:
+      </p>
+      <ul>
+        <li>
+          <p>
+          Weekly 3d-printing classes at Blackspace with rotating black history month topics.
+          These classes will coinside with HacDC's 3D-printing class in Washington, D.C..
+          The two remote classes will be teleconferenced together.
+          We will start by learning how to create 2D CSG shapes, 3D CSG shapes, and their correlating transformation functions.
+          </p>
+        </li>
+        <li>
+          <p>
+          Class architectural walking tour of Durham. 
+          As an exercise, students will see the city, draw their favorite buildings, and design and print a 3D model based off their favorite structures.
+          </p>
+        </li>
+        <li>
+          <p>
+          A proposed one night show at the Carrack Modern Art Gallery in Durham, NC.
+          This is to share the workshop learning process before the class field trip to our nation's capital.
+          </p>
+        </li>
+        <li>
+          <p>
+          Weekend field trip to Washington, D.C. to visit the National Museum of African American History & Culture.
+          We will also have an in person 3D hacking session with the workshop partners at the HacDC hackerspace in Columbia Heights.
+          </p>
+        </li>
+        <li>
+          <p>
+          Class cultural walking tour of Durham.
+          As an exercise, students will see the city, draw the cultural site that resonantes with them in the context of the Washington, D.C. field trip, 
+          and design and print a 3D model based off that experience.
+          </p>
+        </li>
+        <li>
+          <p>
+          Class Art exhibition of 3D printed sculptures as a part of the Carolina Theatre celebration of Philip Freelon.
+          </p>
+        </li>
+        <li>
+          <p>
+          Proposed secondary art exhibitions as a part of Durham's Art of Cool Festival and Moogfest festival.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Workshop Contributions, Limitations and Looking Forward</h2>
+      <img src="images/lulztaz.png" style="width:49%; margin: 5% 25%">
+      <p>
+        Blackspace needs funding for purchasing, building, and maintaining 3D-printing hardware and software, developing a teaching curriculum, and providing travel expenses for students.
+        We would like to purchase 3 3D printers: 1 lulzbot taz <strong>(1 x $2,500)</strong> and 2 lulzbot minis <strong>(2 x $1,250)</strong>.
+        Pictured above is a lulzbot taz, which has a large printing bed and has excellent qualities for experimentation and hacking.
+        Note that we perfer lulzbot printers because they make free and open-source hardware and software.
+        However, if you are associated with another company or are interested in donating alternative hardware, we welcome you with open arms.
+        Computer donations are also welcome. Washington, D.C. travel expenses for each student include transportation, museum tickets, food, materials, and lodging. <strong>(~10 x $500)</strong>.
+        For workshop development and labor: <strong>$7000</strong>.<br><strong>Workshop total is <a class="highlighted" href="">~$17,000</a></strong>.
+        At the end of this pilot, we aim to have a streamlined, low-cost 3D-printing workshop framework that can be replicated in other settings with other students and teachers.
+      </p>
+        
+    </section>	
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	
+
+{% endblock %}

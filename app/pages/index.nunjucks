@@ -1,25 +1,17 @@
 {% extends "layout.nunjucks" %}
 
+{% block heading %}
+	<header>
+		{% import 'macros/navigation.nunjucks' as nav %}
+		{{nav.active('home')}}
+	</header>
+{% endblock %}
+
 {% block content %}
-
 	<section>
-		<img src='images/blackspaceblack.png'>
-	</section>
-	
-	<section>
-		<h2>Blackspace</h2>
+		<iframe width="100%" height="320" src="https://www.youtube.com/embed/WQpf2QyV8Zw?rel=0&amp;controls=0&amp;showinfo=0?ecver=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
 		<p>
-		Blackspace is an Afrofuturism digital makerspace where young afronauts<sup>1</sup> can learn about spoken word poetry, digital storytelling, street gRiot<sup>2</sup>, and creative coding free of charge. View our full <a class="more"  target="_blank" href="https://calendar.google.com/calendar/embed?src=theblackspace.org_57952iu42jn7442hm59rpgs39c%40group.calendar.google.com&ctz=America/New_York">Calendar</a> of wokeshops<sup>3</sup>, programs, and events to join us in deep space.
-
-		</p>
-		<p class="define">
-		1 define afronaut
-		</p>
-		<p class="define">
-		2 define gRiot
-		</p>
-		<p class="define">
-		3 define wokeshop
+		Blackspace is an Afrofuturism digital makerspace where young afronauts can learn about spoken word poetry, digital storytelling, street griot, and creative coding free of charge. View our full <a class="more"  target="_blank" href="https://calendar.google.com/calendar/embed?src=theblackspace.org_57952iu42jn7442hm59rpgs39c%40group.calendar.google.com&ctz=America/New_York">Calendar</a> of wokeshops, programs, and events to join us in deep space.
 		</p>
 	<section>
 	
@@ -27,25 +19,26 @@
 		<h2>Upcoming <i>Woke</i>shops</h2>
 		<ul id="events-upcoming"></ul>
 		<ul id="events-past"></ul>
+		<a class="big-button"  target="_blank" href="https://calendar.google.com/calendar/embed?src=theblackspace.org_57952iu42jn7442hm59rpgs39c%40group.calendar.google.com&ctz=America/New_York">Explore the Full Calendar</a>
 	</section>
 
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="js/format-g-cal.js"></script>
 	<script>
-	formatGoogleCalendar.init({
-		calendarUrl:'https://www.googleapis.com/calendar/v3/calendars/theblackspace.org_57952iu42jn7442hm59rpgs39c@group.calendar.google.com/events?key=AIzaSyBWOwwwRQ5fGEZ2dlUDnI600N_RP7ACWE0',
-  		past: true,
-  		upcoming: true,
-  		pastTopN: 3,
-  		upcomingTopN: 10,
-  		itemsTagName: 'li',
-  		sameDayTimes: true,
-  		upcomingSelector: '#events-upcoming',
-  		recurringEvents: true,
-  		pastSelector: '#events-past',
-  		upcomingHeading: '',
-  		pastHeading: '<h2>Past events</h2>',
-  		format: ['<div class="wokeshop">','*summary*','<span class="more">More Details</span></div>','*date*','*location*','*description*']
-});
-</script>
+		formatGoogleCalendar.init({
+			calendarUrl:'https://www.googleapis.com/calendar/v3/calendars/theblackspace.org_57952iu42jn7442hm59rpgs39c@group.calendar.google.com/events?key=AIzaSyBWOwwwRQ5fGEZ2dlUDnI600N_RP7ACWE0',
+	  		past: false,
+	  		upcoming: true,
+	  		pastTopN: 3,
+	  		upcomingTopN: 7,
+	  		itemsTagName: 'li',
+	  		sameDayTimes: true,
+	  		upcomingSelector: '#events-upcoming',
+	  		recurringEvents: true,
+	  		pastSelector: '#events-past',
+	  		upcomingHeading: '',
+	  		pastHeading: '<h2>Past events</h2>',
+	  		format: ['<div class="wokeshop">','*summary*','<span class="more">More Details</span></div>','*date*','*location*','*description*']
+		});
+	</script>
 {% endblock %}

@@ -1,0 +1,28 @@
+{% extends "layout.nunjucks" %}
+
+{% block heading %}
+		<header>
+			{% import 'macros/navigation.nunjucks' as nav %}
+			{{nav.active('digital-storytelling')}}
+		</header>
+{% endblock %}
+
+{% block content %}
+	<section>
+		<h1>DIGITAL STORYTELLING WOKESHOPS</h1>
+		<h2>Videogrphay Wokeshop | Wed & Fri 5PM-7PM; Feb 2nd — March 31st at Blackspace Durham</h2>
+		<p>
+		Videography Wokeshop is a program designed to encourage students to analyze social issues through film all the while learning the basics of video production. We believe the visual medium is one of the most effective ways to both learn about and bring awareness to any issue. In the age of social media and fast information delivery, students are conditioned to absorb information more effectively when presented either visually or experientially. Video production calls for both.
+		</p>
+
+		<h2>Beat Making Lab Wokeshop | Wed & Fri 5PM-7PM; Feb 2nd — March 31st at Blackspace Durham</h2>
+		<p>
+		Blackspace founder Pierce Freelon is also the co-creator of an international music program called Beat Making Lab. This program has reached across the globe, educating youth about electronic music production, storytelling and sound design. Together these programs will help youth build skills in filmmaking, music production, cinematography and photography; exposing students to various social issues, so they can choose one to focus on for their project; introducing youth to 21st century storytelling and journalistic medium -- the world of film -- and how it can be used to bring awareness to social issues that affect teens; furthermore we aim to connect our youth to professionals and resources and provide a foundation for them to consider film as a career path.
+		<br>
+		The program is co-facilitated by Eric “Clint Eastwood” Brown of Digital Coup Media and producer/rapper Pierce Freelon.
+		</p>
+	<section>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	
+
+{% endblock %}
