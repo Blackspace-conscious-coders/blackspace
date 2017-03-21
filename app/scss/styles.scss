@@ -128,12 +128,13 @@ html {
 		justify-content:center;
 		margin-top: 4em;
 		text-align: center;
-		background-color: #00ae88;
 		color: #202221;
-		background-image: url('/images/space-is-the-place-bw.jpg');
+		background-image: url('/images/blackspace-footer.JPG');
+		background-color: #00ae88;
 		background-blend-mode: multiply;
 		background-repeat: no-repeat;
-		background-position: center 0;
+		background-position: 45% 0;
+		background-size: auto 125%;
 		a {
 			color:inherit;
 
@@ -149,7 +150,7 @@ html {
 		opacity: 0.8;
 		background-color: #505050;
 		width: 300px;
-		margin: 7em 0;
+		margin: 20em 0 10em;
 		}
 		form:hover{
 			cursor: pointer;

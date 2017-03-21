@@ -1,8 +1,10 @@
 {% macro active(activePage='home') %}
-
 <nav>
 	<a href="/" class="{%if activePage == 'home' %} active {% endif %}">Home</a>
 	<a href="./about.html" class="{%if activePage == 'about' %} active {% endif %}">About</a>
+	<!-- <a href="javascript:void(0);" class="{%if activePage == 'wokeshops' %} active {% endif %}">Wokeshops</a>
+	<a href="./donate.html" class="{%if activePage == 'donate' %} active {% endif %}">Donate</a> -->
+
 	<a href="./spoken-word.html" class="{%if activePage == 'spoken-word' %} active {% endif %}">Spoken Word</a>
 	<a href="./digital-storytelling.html" class="{%if activePage == 'digital-storytelling' %} active {% endif %}">Digital Storytelling</a>
 	<a href="./street-griot.html" class="{%if activePage == 'street-griot' %} active {% endif %}">Street gRiot</a>

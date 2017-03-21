@@ -20,7 +20,9 @@
   		<meta name="coverage" content="Worldwide">
   		<meta name="referrer" content="never">
   		<meta name="format-detection" content="telephone=no">
+  		<!--build:css css/styles.min.css-->
 		<link rel="stylesheet" href="css/styles.css">
+		<!-- endbuild -->
 	</head>
 	<body>
 		{% block heading %} 
@@ -36,8 +38,17 @@
 
 		</main>
 		{% include 'partials/footer.nunjucks' %}
+		<!--build:js js/main.min.js -->
 		<script src="js/p5.js"></script>
 		<script src="js/masthead-afronaut.js"></script>
 		<script src="js/main.js"></script>
+		<script>
+			$('footer .big-button').click(function(){
+					// $('#paypal').slideDown()
+					// $('.paypal-video').slideUp()
+					$('.paypal-button').trigger('click');
+			})
+		</script>
+		<!-- endbuild -->
 	</body>
 </html>

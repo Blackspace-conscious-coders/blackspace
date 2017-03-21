@@ -5,17 +5,7 @@
 			<input type="hidden" name="hosted_button_id" value="ANUWSCLWP2V3N">
 			<input class="paypal-button" style="width: 50%; padding: 25px;" type="image" src="http://demare.st/assets/UjamaaSheild-circle.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-			<a class="big-button">Support Blackspace</br>through PayPal</a>
+			<a class="big-button">Donate to Blackspace</br>through PayPal</a>
 		</form>
-		<video class="paypal-video" style="display:none;margin: 7em 0;" autoplay loop src="images/donate.mp4" controls poster="poster.jpg" width="300" height="300" style="display:block;">
-			<a href="images/donate.mp4">Support Blackspace</a>
-		</video>
 	</div>
 </footer>
-<script>
-$('footer .big-button, footer').click(function(){
-	$('#paypal').slideToggle()
-	$('.paypal-video').slideToggle()
-	setTimeout(function(){$('.paypal-button').trigger('click');},500);
-})
-</script>

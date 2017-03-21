@@ -1,7 +1,7 @@
 {
-  "name": "gulp-tutorial",
+  "name": "blackspace",
   "version": "1.0.0",
-  "description": "first go at gulp build process",
+  "description": "blackspace main website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
