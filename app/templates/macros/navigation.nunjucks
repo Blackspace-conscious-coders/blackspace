@@ -5,10 +5,12 @@
 	<!-- <a href="javascript:void(0);" class="{%if activePage == 'wokeshops' %} active {% endif %}">Wokeshops</a>
 	<a href="./donate.html" class="{%if activePage == 'donate' %} active {% endif %}">Donate</a> -->
 
-	<a href="./spoken-word.html" class="{%if activePage == 'spoken-word' %} active {% endif %}">Spoken Word</a>
-	<a href="./digital-storytelling.html" class="{%if activePage == 'digital-storytelling' %} active {% endif %}">Digital Storytelling</a>
-	<a href="./street-griot.html" class="{%if activePage == 'street-griot' %} active {% endif %}">Street gRiot</a>
-	<a href="./conscious-code.html" class="{%if activePage == 'conscious-code' %} active {% endif %}">Conscious Code</a>
+	<a href="javascript:void(0);" id="woke">Wokeshops</a>
 </nav>
-
+	<div id="wokeshops" class="hidden">
+		<a href="./spoken-word.html" id="spokenword" class="{%if activePage == 'spoken-word' %} active {% endif %} navwokeshop">Spoken Word</a>
+		<a href="./digital-storytelling.html" id="digitalstorytelling" class="{%if activePage == 'digital-storytelling' %} active {% endif %} navwokeshop">Digital Storytelling</a>
+		<a href="./street-griot.html" id="streetgriot" class="{%if activePage == 'street-griot' %} active {% endif %} navwokeshop">Street gRiot</a>
+		<a href="./conscious-code.html" id="consciouscode " class="{%if activePage == 'conscious-code' %} active {% endif %} navwokeshop">Conscious Code</a>
+	</div>
 {% endmacro %}

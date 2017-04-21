@@ -66,7 +66,7 @@ html {
     width: 550px;
     margin: -223px 0 0 -275px !important;
     padding-left: 50%;
-    display: none;
+    display: block;
     position: absolute;
     /*opacity: 0.25;*/ }
   html .masthead-wrapper {
@@ -107,12 +107,13 @@ html {
     justify-content: center;
     margin-top: 4em;
     text-align: center;
-    background-color: #00ae88;
     color: #202221;
-    background-image: url("/images/space-is-the-place-bw.jpg");
+    background-image: url("/images/blackspace-footer.JPG");
+    background-color: #00ae88;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
-    background-position: center 0; }
+    background-position: 45% 0;
+    background-size: auto 125%; }
     html footer a {
       color: inherit; }
     html footer h2 {
@@ -124,7 +125,7 @@ html {
       opacity: 0.8;
       background-color: #505050;
       width: 300px;
-      margin: 7em 0; }
+      margin: 20em 0 10em; }
     html footer form:hover {
       cursor: pointer;
       background-color: #c52a31;
@@ -132,6 +133,38 @@ html {
       transition: none 300ms ease-out;
       transition: none 300ms ease-in;
       transition-property: color, background, opacity; }
+
+#wokeshops {
+  background-color: #c52a31;
+  display: block;
+  text-align: center;
+  -webkit-transition: display 0.5s ease;
+  -moz-transition: display 0.5s ease;
+  -o-transition: display 0.5s ease;
+  transition: display 0.5s ease;
+  position: absolute;
+  width: 100%; }
+
+#wokeshops.hidden {
+  display: none; }
+
+.navwokeshop {
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.75em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  transition-property: color; }
+  .navwokeshop strong {
+    color: inherit; }
+
+.navwokeshop:hover {
+  color: black; }
+
+.navwokeshop.active {
+  color: black; }
 
 #events-upcoming .location, #events-upcoming .date, #events-upcoming .description {
   display: block;
@@ -142,9 +175,13 @@ html {
   color: #00ae88; }
 
 #events-upcoming .description {
-  display: none; }
+  display: none;
+  color: #c52a31;
+  opacity: 0.45;
+  font-size: 14px;
+  padding-top: 14px; }
 
-#events-upcoming .more {
+#events-upcoming .moredetails {
   text-align: right;
   float: right;
   color: #c52a31; }
@@ -158,4 +195,6 @@ html {
     padding: 2em; }
   html .header-logo {
     width: 250px;
-    margin: -205px 0 0 -125px !important; } }
+    margin: -205px 0 0 -125px !important; }
+  .navwokeshop {
+    display: block; } }

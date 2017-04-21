@@ -20,23 +20,29 @@
   		<meta name="coverage" content="Worldwide">
   		<meta name="referrer" content="never">
   		<meta name="format-detection" content="telephone=no">
+  		<!--build:css css/styles.min.css-->
 		<link rel="stylesheet" href="css/styles.css">
+		<!-- endbuild -->
 	</head>
 	<body>
 		
 		<header>
 			
 			
-
 <nav>
 	<a href="/" class="">Home</a>
 	<a href="./about.html" class="">About</a>
-	<a href="./spoken-word.html" class="">Spoken Word</a>
-	<a href="./digital-storytelling.html" class="">Digital Storytelling</a>
-	<a href="./street-griot.html" class=" active ">Street gRiot</a>
-	<a href="./conscious-code.html" class="">Conscious Code</a>
-</nav>
+	<!-- <a href="javascript:void(0);" class="">Wokeshops</a>
+	<a href="./donate.html" class="">Donate</a> -->
 
+	<a href="javascript:void(0);" id="woke">Wokeshops</a>
+</nav>
+	<div id="wokeshops" class="hidden">
+		<a href="./spoken-word.html" id="spokenword" class=" navwokeshop">Spoken Word</a>
+		<a href="./digital-storytelling.html" id="digitalstorytelling" class=" navwokeshop">Digital Storytelling</a>
+		<a href="./street-griot.html" id="streetgriot" class=" active  navwokeshop">Street gRiot</a>
+		<a href="./conscious-code.html" id="consciouscode " class=" navwokeshop">Conscious Code</a>
+	</div>
 
 		</header>
 	
@@ -46,7 +52,7 @@
 
 			
 	<section>
-		<iframe width="100%" height="320" src="https://www.youtube.com/embed/XYamhbKomNg?rel=0&amp;controls=0&amp;showinfo=0?ecver=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
+		<iframe width="100%" height="320" src="https://www.youtube.com/embed/XYamhbKomNg?rel=0&amp;controls=0&amp;showinfo=0?ecver=1" frameborder="0" allowfullscreen></iframe>
 		<h1>STREET gRiot: PUPPETRY WOKESHOPS</h1>
 		<h2>Street gRIOT: Puppetry Wokeshop | Saturdays</h2>
 		<p>
@@ -69,23 +75,22 @@
 			<input type="hidden" name="hosted_button_id" value="ANUWSCLWP2V3N">
 			<input class="paypal-button" style="width: 50%; padding: 25px;" type="image" src="http://demare.st/assets/UjamaaSheild-circle.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-			<a class="big-button">Support Blackspace</br>through PayPal</a>
+			<a class="big-button">Donate to Blackspace</br>through PayPal</a>
 		</form>
-		<video class="paypal-video" style="display:none;margin: 7em 0;" autoplay loop src="images/donate.mp4" controls poster="poster.jpg" width="300" height="300" style="display:block;">
-			<a href="images/donate.mp4">Support Blackspace</a>
-		</video>
 	</div>
 </footer>
-<script>
-$('footer .big-button, footer').click(function(){
-	$('#paypal').slideToggle()
-	$('.paypal-video').slideToggle()
-	setTimeout(function(){$('.paypal-button').trigger('click');},500);
-})
-</script>
-
+		<!--build:js js/main.min.js -->
 		<script src="js/p5.js"></script>
 		<script src="js/masthead-afronaut.js"></script>
+		<script src="js/wokeshops.js"></script>
 		<script src="js/main.js"></script>
+		<script>
+			$('footer .big-button').click(function(){
+					// $('#paypal').slideDown()
+					// $('.paypal-video').slideUp()
+					$('.paypal-button').trigger('click');
+			});
+		</script>
+		<!-- endbuild -->
 	</body>
 </html>

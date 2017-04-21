@@ -6,7 +6,7 @@ var black = true;
 
 
 function setup() {
-  	canvas = createCanvas(windowWidth, 350);
+  	canvas = createCanvas(windowWidth - 15, 350);
   	canvas.parent('masthead-wrapper');
     	background(0,0,0);
     	frameRate(70);
@@ -34,7 +34,7 @@ function draw() {
 
 
 function windowResized() {
-  	resizeCanvas(windowWidth, 350);
+  	resizeCanvas(windowWidth - 15, 350);
 }
 
 
@@ -125,9 +125,10 @@ Boid.prototype.render = function() {
     
   	},1000)
 
-	if(frameCount == 225 ){
+	/*if(frameCount == 225 ){
 		$('.header-logo').fadeIn(3000)
 	}
+  */
    	
 	fill(0,174,136)
     	var r = _strokeCol / 10;

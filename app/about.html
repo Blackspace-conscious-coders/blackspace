@@ -20,23 +20,29 @@
   		<meta name="coverage" content="Worldwide">
   		<meta name="referrer" content="never">
   		<meta name="format-detection" content="telephone=no">
+  		<!--build:css css/styles.min.css-->
 		<link rel="stylesheet" href="css/styles.css">
+		<!-- endbuild -->
 	</head>
 	<body>
 		
 		<header>
 			
 			
-
 <nav>
 	<a href="/" class="">Home</a>
 	<a href="./about.html" class=" active ">About</a>
-	<a href="./spoken-word.html" class="">Spoken Word</a>
-	<a href="./digital-storytelling.html" class="">Digital Storytelling</a>
-	<a href="./street-griot.html" class="">Street gRiot</a>
-	<a href="./conscious-code.html" class="">Conscious Code</a>
-</nav>
+	<!-- <a href="javascript:void(0);" class="">Wokeshops</a>
+	<a href="./donate.html" class="">Donate</a> -->
 
+	<a href="javascript:void(0);" id="woke">Wokeshops</a>
+</nav>
+	<div id="wokeshops" class="hidden">
+		<a href="./spoken-word.html" id="spokenword" class=" navwokeshop">Spoken Word</a>
+		<a href="./digital-storytelling.html" id="digitalstorytelling" class=" navwokeshop">Digital Storytelling</a>
+		<a href="./street-griot.html" id="streetgriot" class=" navwokeshop">Street gRiot</a>
+		<a href="./conscious-code.html" id="consciouscode " class=" navwokeshop">Conscious Code</a>
+	</div>
 
 		</header>
 	
@@ -52,7 +58,10 @@
 		Blackspace founder Pierce Freelon is an Afrofuturist. Born and raised in Durham, North Carolina his parents and grandmother fed him a steady diet of Star Trek: the Next Generation, the Museum of Life and Science, and Afrocentricity. After graduating with degrees in Black Studies from UNC Chapel Hill (BA) and Syracuse University (MA), he started searching for ways to answer his calling to art and activism. Pierce found early success co-founding the Emmy-award winning PBS web-series, Beat Making LabTM.
 		</p>
 		<h2>BLOOM WHERE YOU ARE PLANTED</h2>
-		<img src="images/the-queen-bw.jpg">
+		<figure style="margin:0">
+			<img src="images/the-queen-bw.jpg">
+			<figcaption>Pierce's Grandmother, Queen Mother Frances Pierce with her friend, Dr. Maya Angelou</figcaption>
+		</figure>
 		<p>
 		In 2014, after several years teaching beat making and songwriting across Africa and its diaspora, Pierce's ancestors communicated a clear message: go home. Inspired by his Grandmother's mantra "bloom where you are planted" he returned to North Carolina and opened Blackspace Chapel Hill at 179 E Franklin Street.
 		</p>
@@ -82,23 +91,22 @@
 			<input type="hidden" name="hosted_button_id" value="ANUWSCLWP2V3N">
 			<input class="paypal-button" style="width: 50%; padding: 25px;" type="image" src="http://demare.st/assets/UjamaaSheild-circle.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-			<a class="big-button">Support Blackspace</br>through PayPal</a>
+			<a class="big-button">Donate to Blackspace</br>through PayPal</a>
 		</form>
-		<video class="paypal-video" style="display:none;margin: 7em 0;" autoplay loop src="images/donate.mp4" controls poster="poster.jpg" width="300" height="300" style="display:block;">
-			<a href="images/donate.mp4">Support Blackspace</a>
-		</video>
 	</div>
 </footer>
-<script>
-$('footer .big-button, footer').click(function(){
-	$('#paypal').slideToggle()
-	$('.paypal-video').slideToggle()
-	setTimeout(function(){$('.paypal-button').trigger('click');},500);
-})
-</script>
-
+		<!--build:js js/main.min.js -->
 		<script src="js/p5.js"></script>
 		<script src="js/masthead-afronaut.js"></script>
+		<script src="js/wokeshops.js"></script>
 		<script src="js/main.js"></script>
+		<script>
+			$('footer .big-button').click(function(){
+					// $('#paypal').slideDown()
+					// $('.paypal-video').slideUp()
+					$('.paypal-button').trigger('click');
+			});
+		</script>
+		<!-- endbuild -->
 	</body>
 </html>

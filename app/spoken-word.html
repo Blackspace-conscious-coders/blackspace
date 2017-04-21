@@ -20,23 +20,29 @@
   		<meta name="coverage" content="Worldwide">
   		<meta name="referrer" content="never">
   		<meta name="format-detection" content="telephone=no">
+  		<!--build:css css/styles.min.css-->
 		<link rel="stylesheet" href="css/styles.css">
+		<!-- endbuild -->
 	</head>
 	<body>
 		
 		<header>
 			
 			
-
 <nav>
 	<a href="/" class="">Home</a>
 	<a href="./about.html" class="">About</a>
-	<a href="./spoken-word.html" class=" active ">Spoken Word</a>
-	<a href="./digital-storytelling.html" class="">Digital Storytelling</a>
-	<a href="./street-griot.html" class="">Street gRiot</a>
-	<a href="./conscious-code.html" class="">Conscious Code</a>
-</nav>
+	<!-- <a href="javascript:void(0);" class="">Wokeshops</a>
+	<a href="./donate.html" class="">Donate</a> -->
 
+	<a href="javascript:void(0);" id="woke">Wokeshops</a>
+</nav>
+	<div id="wokeshops" class="hidden">
+		<a href="./spoken-word.html" id="spokenword" class=" active  navwokeshop">Spoken Word</a>
+		<a href="./digital-storytelling.html" id="digitalstorytelling" class=" navwokeshop">Digital Storytelling</a>
+		<a href="./street-griot.html" id="streetgriot" class=" navwokeshop">Street gRiot</a>
+		<a href="./conscious-code.html" id="consciouscode " class=" navwokeshop">Conscious Code</a>
+	</div>
 
 		</header>
 	
@@ -46,7 +52,7 @@
 
 				
 	<section>
-		<iframe width="100%" height="320" src="https://www.youtube.com/embed/C7LbZRC76Sk?rel=0&amp;controls=0&amp;showinfo=0?ecver=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
+		<iframe src="https://player.vimeo.com/video/207120489?" width="100%" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>		
 
 		<h1>SPOKEN WORD</h1>
 		<h2>Writing and Performance Workshops + Cypher | Every Thursday 6PM-8:30PM at Blackspace Durham until April 13th 2017</h2>
@@ -55,16 +61,16 @@
 		</p>
 		<img src="images/spoken-word.jpg">
 
-		<h2>Monthly Poetry Slams | Every 3rd Tuesday @ Beyu Caffe until April 18th 2017</h2>
+		<h2>Monthly Poetry Slams | Every 3rd Tuesday @ Beyu Caffe until March 21st, 2017 (Grand Slam Finals are April 7th at the Hayti Heritage Center)</h2>
 		<p>
-		Each month, on 3rd Tuesdays, workshops culminate in a monthly poetry slam at Beyu Caffe. Slams are free and open to the public. The mic is open to all youth between the ages of 13 and 19. Poetry slam winners are eligible to join Blackspace and Durham’s first Brave New Voices Team.
+		Each month, on 3rd Tuesdays, workshops culminate in a monthly poetry slam at Beyu Caffe. Slams are free and open to the public. The mic is open to all youth between the ages of 13 and 19. Poetry slam winners are eligible to join Durham's first youth slam team, which will apply to compete at Brave New Voices. 
 		</p>
 
 		<h2>Brave New Voices | July 19-22 2017 in the Bay Area</h2>
 		<p>
-		Now in its 20th year, Brave New Voices is an annual international youth poetry slam and festival, which convenes the most outstanding and outspoken youth poets from around the world for 5 days of workshops, slams, showcases, community service and civic participation events. Blackspace will represent Durham’s first youth poetry slam team at BNV 2017.
+		Now in its 20th year, Brave New Voices is an annual international youth poetry slam and festival, which convenes the most outstanding and outspoken youth poets from around the world for 5 days of workshops, slams, showcases, community service and civic participation events. Blackspace is applying to BNV and hopes to represent Durham with it's first youth poetry slam team at BNV 2017.
 		<br>
-		For more information email Mariah Monsanto: blackspacepoetry@gmail.com
+		For more information email For more information email <a href="mailto:blackspacepoetry@gmail.com">Mariah Monsanto</a>.
 		</p>
 		<img src="images/spoken-word-2.jpg">
 
@@ -82,23 +88,22 @@
 			<input type="hidden" name="hosted_button_id" value="ANUWSCLWP2V3N">
 			<input class="paypal-button" style="width: 50%; padding: 25px;" type="image" src="http://demare.st/assets/UjamaaSheild-circle.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-			<a class="big-button">Support Blackspace</br>through PayPal</a>
+			<a class="big-button">Donate to Blackspace</br>through PayPal</a>
 		</form>
-		<video class="paypal-video" style="display:none;margin: 7em 0;" autoplay loop src="images/donate.mp4" controls poster="poster.jpg" width="300" height="300" style="display:block;">
-			<a href="images/donate.mp4">Support Blackspace</a>
-		</video>
 	</div>
 </footer>
-<script>
-$('footer .big-button, footer').click(function(){
-	$('#paypal').slideToggle()
-	$('.paypal-video').slideToggle()
-	setTimeout(function(){$('.paypal-button').trigger('click');},500);
-})
-</script>
-
+		<!--build:js js/main.min.js -->
 		<script src="js/p5.js"></script>
 		<script src="js/masthead-afronaut.js"></script>
+		<script src="js/wokeshops.js"></script>
 		<script src="js/main.js"></script>
+		<script>
+			$('footer .big-button').click(function(){
+					// $('#paypal').slideDown()
+					// $('.paypal-video').slideUp()
+					$('.paypal-button').trigger('click');
+			});
+		</script>
+		<!-- endbuild -->
 	</body>
 </html>

@@ -41,13 +41,14 @@
 		<!--build:js js/main.min.js -->
 		<script src="js/p5.js"></script>
 		<script src="js/masthead-afronaut.js"></script>
+		<script src="js/wokeshops.js"></script>
 		<script src="js/main.js"></script>
 		<script>
 			$('footer .big-button').click(function(){
 					// $('#paypal').slideDown()
 					// $('.paypal-video').slideUp()
 					$('.paypal-button').trigger('click');
-			})
+			});
 		</script>
 		<!-- endbuild -->
 	</body>

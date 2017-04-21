@@ -38,8 +38,14 @@
 	  		pastSelector: '#events-past',
 	  		upcomingHeading: '',
 	  		pastHeading: '<h2>Past events</h2>',
-	  		format: ['<div class="wokeshop">','*summary*','<span class="more">More Details</span></div>','*date*','*location*','*description*']
+	  		format: ['<div class="wokeshop">','*summary*','<span class="moredetails">More Details</span></div>','*date*','*location*', '*description*']
 		});
+	/*document.getElementsByClassName('moredetails')[0].onclick = function () {
+    	document.getElementsByClassName('moredetails')[0].style.color = 'white';
+    };*/
+
+    /*document.getElementById('woke').onclick*/
+
 	</script>
 	<!-- endbuild -->
 {% endblock %}
