@@ -71,9 +71,15 @@ html {
   			transition: none 200ms ease-out;
   			transition-property: color, background;
 		}
-		a.active, a:hover{
+		a.active, a.donate:hover, a:hover{
 			color: #c52a31;
 		}
+		.donate{
+			color:#FFEE54;
+			transition: none 200ms ease-out;
+  			transition-property: color, background;
+		}
+
 	}
 	.header-logo{
 		width: 550px;
@@ -200,6 +206,8 @@ html {
 .navwokeshop.active{
 	color: black;
 }
+
+
 
 #events-upcoming{
 
